@@ -1,0 +1,496 @@
+$font-Roboto: 'Roboto', sans-serif;
+$font-Playfair: 'Playfair Display', sans-serif;
+$font-Prata: 'Prata', sans-serif;
+$skin-color: #D4B098;
+$gray-color: #444240;
+$white-color: #FDFDFB;
+$title-color: #1B1A17;
+$text-color: #444240;
+
+%content__title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    color: $title-color;
+}
+
+%content__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #444240;
+}
+
+%flex-centre-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%font-Playfair {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    color: $title-color;
+}
+
+%font-Roboto {
+    font-family: $font-Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(27, 26, 23, 0.82);
+
+}
+
+%font-Prata {
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: $font-Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+}
+
+h2 {
+    @extend %font-Playfair;
+}
+
+p {
+    @extend %content__text;
+}
+
+.sq-button {
+    height: 64px;
+    width: 205px;
+    font-family: 'Roboto';
+    color: #ffffff;
+    background-color: $text-color;
+    border: none;
+}
+
+//шапка меню
+
+.menu {
+    max-height: 85px;
+    @extend %flex-centre-type;
+    justify-content: space-evenly;
+    padding: 30px 0;
+
+    .link {
+        font-family: $font-Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration: none;
+        color: #555248;
+        margin: 0 65px 0 0;
+
+        &:last-child {
+            margin: 0;
+        }
+
+    }
+}
+
+.logo {
+    max-height: 26px;
+}
+
+.icon {
+    height: 16px;
+    color: #1B1A17;
+    margin: 0 23px 0 0;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.btn {}
+
+hr {
+    margin: 0 15px;
+    width: 50px;
+    border: 1px solid #8B8371;
+}
+
+//Главный блок - первый экран
+
+.main-block {
+    background: url("../img/Ellipse.png") 50% no-repeat;
+    @extend %flex-centre-type;
+    width: 100%;
+
+    &__content {
+        display: flex;
+
+        &--hr {
+            margin-top: 36px;
+        }
+
+        &--header {
+
+            @extend %font-Playfair;
+            font-size: 45px;
+            line-height: 60px;
+
+        }
+
+        &--title {
+            @extend %font-Playfair;
+            line-height: 40px;
+        }
+
+        &--text {
+            @extend %font-Roboto;
+            max-width: 258px;
+            margin: 39px 0 64px;
+        }
+
+        &--btn {
+            height: 64px;
+            width: 205px;
+            color: #ffffff;
+            background-color: $text-color;
+            text-transform: uppercase;
+            border: none
+        }
+    }
+
+    &__price {
+        @extend %flex-centre-type;
+        position: absolute;
+        margin: 0 137px 489px 0;
+
+        &--text {
+            @extend %font-Prata, %flex-centre-type;
+            line-height: 15px;
+            padding-right: 8px;
+        }
+
+    }
+
+
+    &__image {
+        max-height: 804px;
+        position: relative;
+        margin-left: 125px;
+        margin-top: 23px;
+    }
+
+
+    &__size {
+        @extend %flex-centre-type;
+        margin: 523px 0 0 -102px;
+
+        &--text {
+            @extend %font-Prata,
+        }
+    }
+}
+
+// второй экран
+
+.cards-wrap {
+
+    &__header {
+        padding: 25px 0;
+
+        &--title {
+            text-align: center;
+            margin-top: 25px;
+
+        }
+
+        &--btn {
+            display: grid;
+            justify-content: end;
+            margin-right: 98px;
+
+            button {
+                background: none;
+                border: none;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: $gray-color;
+                margin-bottom: 12px;
+            }
+
+            hr {
+                width: 101px;
+                border: 1px solid #C4C0B6;
+            }
+        }
+
+    }
+
+    &__cards {
+        @extend %flex-centre-type;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 50px;
+    }
+}
+
+.card {
+    padding: 40px;
+    background: url('../img/Ellipse.svg') 50% no-repeat;
+    max-width: 370px;
+    box-sizing: border-box;
+
+    &__title {
+        h5 {
+            @extend %font-Playfair;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            color: rgba(27, 26, 23, 0.82);
+        }
+
+        p {
+            font-family: 'Prata';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: rgba(27, 26, 23, 0.82);
+
+            img {
+                padding-left: 2px
+            }
+        }
+
+    }
+
+    &__image {}
+
+    &__details {
+        @extend %flex-centre-type;
+        justify-content: start;
+
+        hr {
+            width: 30px;
+            border: 1px solid #8B8371;
+        }
+
+        button {
+            background: none;
+            border: none;
+            font-family: 'Playfair Display';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            color: $title-color;
+        }
+    }
+}
+
+// слайдер - третий экран
+
+.slider-wrap {
+    padding: 52px 0 21px;
+    background: url('../img/background_slider.png') 0 0/cover no-repeat;
+    @extend %flex-centre-type;
+    justify-content: space-evenly;
+
+    .slider {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        &__container {
+            .mySlides {
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+
+        &-btn {
+            img {
+                width: 5px;
+            }
+        }
+    }
+
+    .content {
+        &__text {
+            max-width: 376px;
+            margin: 38px 0 45px;
+        }
+
+        &__btn {
+            button {
+                background-color: $skin-color;
+            }
+        }
+    }
+
+}
+
+//коллаж - четвертый экран
+.collage-blok {
+    padding: 81px 37px;
+}
+
+.collage {
+    @extend %flex-centre-type;
+    align-items: end;
+    justify-content: space-evenly;
+
+    &__content {
+
+        max-width: 300px;
+
+        &--text {
+            max-width: 376px;
+            margin: 40px 0;
+
+
+
+            b {
+                // @extend %content__text;
+                // font-weight: bold;
+            }
+
+        }
+
+        &--icons {
+            padding: 40px 0 62px;
+
+            img {
+                margin-right: 18px;
+
+            }
+        }
+    }
+
+    &__image {
+        margin: 10px;
+
+        .row {
+            @extend %flex-centre-type;
+
+
+
+            .column {
+                margin: 0 10px 0 0;
+            }
+
+            &--1 {
+                margin-bottom: 7px;
+            }
+
+            .img {
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+//footer
+.footer-wrap {
+    background-color: $text-color;
+    padding: 67px;
+
+    .footer {
+        color: #FFFFFF;
+        display: flex;
+        justify-content: space-around;
+
+        &__main {
+            &--logo {
+                margin: 0 0 16px;
+            }
+
+            &--contacts {
+                p {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: rgba(255, 255, 255, 0.75);
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        &__info {
+            margin-top: 15px;
+
+            &--title {
+                h6 {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: 0.07em;
+                    text-transform: uppercase;
+                    margin-bottom: 15.5px;
+                }
+            }
+
+            &--links {
+                @extend %flex-centre-type;
+                flex-direction: column;
+                align-items: start;
+
+                a {
+                    text-decoration: none;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: rgba(255, 255, 255, 0.75);
+                    padding: 7.5px 0;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.mobile {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}

@@ -1,0 +1,337 @@
+p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #444240;
+}
+
+.footer__info--links, .collage__image .row, .collage, .slider-wrap, .card__details, .cards-wrap__cards, .main-block__size, .main-block__price--text, .main-block__price, .main-block, .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__title h5, .main-block__content--title, .main-block__content--header, h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1B1A17;
+}
+
+.main-block__content--text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.main-block__size--text, .main-block__price--text {
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.sq-button {
+  height: 64px;
+  width: 205px;
+  font-family: "Roboto";
+  color: #ffffff;
+  background-color: #444240;
+  border: none;
+}
+
+.menu {
+  max-height: 85px;
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+.menu .link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #555248;
+  margin: 0 65px 0 0;
+}
+.menu .link:last-child {
+  margin: 0;
+}
+
+.logo {
+  max-height: 26px;
+}
+
+.icon {
+  height: 16px;
+  color: #1B1A17;
+  margin: 0 23px 0 0;
+}
+.icon:last-child {
+  margin: 0;
+}
+
+hr {
+  margin: 0 15px;
+  width: 50px;
+  border: 1px solid #8B8371;
+}
+
+.main-block {
+  background: url("../img/Ellipse.png") 50% no-repeat;
+  width: 100%;
+}
+.main-block__content {
+  display: flex;
+}
+.main-block__content--hr {
+  margin-top: 36px;
+}
+.main-block__content--header {
+  font-size: 45px;
+  line-height: 60px;
+}
+.main-block__content--title {
+  line-height: 40px;
+}
+.main-block__content--text {
+  max-width: 258px;
+  margin: 39px 0 64px;
+}
+.main-block__content--btn {
+  height: 64px;
+  width: 205px;
+  color: #ffffff;
+  background-color: #444240;
+  text-transform: uppercase;
+  border: none;
+}
+.main-block__price {
+  position: absolute;
+  margin: 0 137px 489px 0;
+}
+.main-block__price--text {
+  line-height: 15px;
+  padding-right: 8px;
+}
+.main-block__image {
+  max-height: 804px;
+  position: relative;
+  margin-left: 125px;
+  margin-top: 23px;
+}
+.main-block__size {
+  margin: 523px 0 0 -102px;
+}
+.cards-wrap__header {
+  padding: 25px 0;
+}
+.cards-wrap__header--title {
+  text-align: center;
+  margin-top: 25px;
+}
+.cards-wrap__header--btn {
+  display: grid;
+  justify-content: end;
+  margin-right: 98px;
+}
+.cards-wrap__header--btn button {
+  background: none;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444240;
+  margin-bottom: 12px;
+}
+.cards-wrap__header--btn hr {
+  width: 101px;
+  border: 1px solid #C4C0B6;
+}
+.cards-wrap__cards {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 50px;
+}
+
+.card {
+  padding: 40px;
+  background: url("../img/Ellipse.svg") 50% no-repeat;
+  max-width: 370px;
+  box-sizing: border-box;
+}
+.card__title h5 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+}
+.card__title p {
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+.card__title p img {
+  padding-left: 2px;
+}
+.card__details {
+  justify-content: start;
+}
+.card__details hr {
+  width: 30px;
+  border: 1px solid #8B8371;
+}
+.card__details button {
+  background: none;
+  border: none;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1B1A17;
+}
+
+.slider-wrap {
+  padding: 52px 0 21px;
+  background: url("../img/background_slider.png") 0 0/cover no-repeat;
+  justify-content: space-evenly;
+}
+.slider-wrap .slider {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.slider-wrap .slider__container .mySlides img {
+  height: auto;
+  width: 100%;
+}
+.slider-wrap .slider-btn img {
+  width: 5px;
+}
+.slider-wrap .content__text {
+  max-width: 376px;
+  margin: 38px 0 45px;
+}
+.slider-wrap .content__btn button {
+  background-color: #D4B098;
+}
+
+.collage-blok {
+  padding: 81px 37px;
+}
+
+.collage {
+  align-items: end;
+  justify-content: space-evenly;
+}
+.collage__content {
+  max-width: 300px;
+}
+.collage__content--text {
+  max-width: 376px;
+  margin: 40px 0;
+}
+.collage__content--icons {
+  padding: 40px 0 62px;
+}
+.collage__content--icons img {
+  margin-right: 18px;
+}
+.collage__image {
+  margin: 10px;
+}
+.collage__image .row .column {
+  margin: 0 10px 0 0;
+}
+.collage__image .row--1 {
+  margin-bottom: 7px;
+}
+.collage__image .row .img img {
+  height: auto;
+  width: 100%;
+}
+
+.footer-wrap {
+  background-color: #444240;
+  padding: 67px;
+}
+
+.footer {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__main--logo {
+  margin: 0 0 16px;
+}
+.footer__main--contacts p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 15px;
+}
+.footer__info {
+  margin-top: 15px;
+}
+.footer__info--title h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 15.5px;
+}
+.footer__info--links {
+  flex-direction: column;
+  align-items: start;
+}
+.footer__info--links a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 7.5px 0;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
